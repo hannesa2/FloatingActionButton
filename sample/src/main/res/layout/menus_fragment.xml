@@ -30,7 +30,7 @@
         android:textSize="18sp"
         android:text="@string/lorem_ipsum_large"/>
 
-    <com.github.clans.fab.FloatingActionMenu
+    <info.floatactionbutton.fab.FloatingActionMenu
         android:id="@+id/menu_yellow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
         fab:menu_colorPressed="#F2AB00"
         fab:menu_colorRipple="#D99200">
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/fab12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             fab:fab_label="Menu item 1"
             style="@style/MenuButtonsStyle" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/fab22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             fab:fab_label="Menu item 2"
             style="@style/MenuButtonsStyle" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/fab32"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,9 +73,9 @@
             fab:fab_label="@string/lorem_ipsum"
             style="@style/MenuButtonsStyle" />
 
-    </com.github.clans.fab.FloatingActionMenu>
+    </info.floatactionbutton.fab.FloatingActionMenu>
 
-    <com.github.clans.fab.FloatingActionMenu
+    <info.floatactionbutton.fab.FloatingActionMenu
         android:id="@+id/menu_green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,30 +93,30 @@
         fab:menu_labels_maxLines="2"
         fab:menu_labels_ellipsize="end">
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_edit"
             fab:fab_label="Menu item 1"
             style="@style/MenuButtonsSmall.Green" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_edit"
             fab:fab_label="Menu item 2"
             style="@style/MenuButtonsSmall.Green" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_edit"
             fab:fab_label="@string/lorem_ipsum"
             style="@style/MenuButtonsSmall.Green" />
 
-    </com.github.clans.fab.FloatingActionMenu>
+    </info.floatactionbutton.fab.FloatingActionMenu>
 
-    <com.github.clans.fab.FloatingActionMenu
+    <info.floatactionbutton.fab.FloatingActionMenu
         android:id="@+id/menu_blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -131,30 +131,30 @@
         fab:menu_colorPressed="#2272CD"
         fab:menu_colorRipple="#62B2FF">
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/fab14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_star"
             style="@style/MenuButtonsSmall" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/fab24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_star"
             style="@style/MenuButtonsSmall" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/fab34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_star"
             style="@style/MenuButtonsSmall" />
 
-    </com.github.clans.fab.FloatingActionMenu>
+    </info.floatactionbutton.fab.FloatingActionMenu>
 
-    <com.github.clans.fab.FloatingActionButton
+    <info.floatactionbutton.fab.FloatingActionButton
         android:id="@+id/fab_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
         android:visibility="invisible"
         tools:visibility="visible"/>
 
-    <com.github.clans.fab.FloatingActionMenu
+    <info.floatactionbutton.fab.FloatingActionMenu
         android:id="@+id/menu_down"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -186,30 +186,30 @@
         fab:menu_fab_size="mini"
         fab:menu_openDirection="down">
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_edit"
             fab:fab_size="mini"
             fab:fab_label="Menu item 1" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_edit"
             fab:fab_size="mini"
             fab:fab_label="Menu item 2" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_edit"
             fab:fab_size="mini"
             fab:fab_label="@string/lorem_ipsum" />
 
-    </com.github.clans.fab.FloatingActionMenu>
+    </info.floatactionbutton.fab.FloatingActionMenu>
 
-    <com.github.clans.fab.FloatingActionMenu
+    <info.floatactionbutton.fab.FloatingActionMenu
         android:id="@+id/menu_red"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -223,7 +223,7 @@
         fab:menu_backgroundColor="#ccffffff"
         fab:menu_fab_label="Menu label">
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/fab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -231,7 +231,7 @@
             fab:fab_size="mini"
             fab:fab_label="Disabled" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/fab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -239,7 +239,7 @@
             fab:fab_size="mini"
             fab:fab_label="Remove button" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/fab3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -247,9 +247,9 @@
             fab:fab_size="mini"
             fab:fab_label="Restore Button" />
 
-    </com.github.clans.fab.FloatingActionMenu>
+    </info.floatactionbutton.fab.FloatingActionMenu>
 
-    <com.github.clans.fab.FloatingActionMenu
+    <info.floatactionbutton.fab.FloatingActionMenu
         android:id="@+id/menu_labels_right"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -262,27 +262,27 @@
         fab:menu_backgroundColor="#ccffffff"
         fab:menu_labels_position="right">
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_edit"
             fab:fab_size="mini"
             fab:fab_label="Menu item 1" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_edit"
             fab:fab_size="mini"
             fab:fab_label="Menu item 2" />
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_edit"
             fab:fab_size="mini"
             fab:fab_label="@string/lorem_ipsum" />
 
-    </com.github.clans.fab.FloatingActionMenu>
+    </info.floatactionbutton.fab.FloatingActionMenu>
 
 </RelativeLayout>

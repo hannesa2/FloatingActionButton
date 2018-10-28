@@ -1,4 +1,4 @@
-package com.github.clans.fab.sample;
+package info.floatactionbutton.fab.sample;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,8 +13,8 @@ import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.github.clans.fab.FloatingActionButton;
-import com.github.fab.sample.R;
+import info.floatactionbutton.fab.FloatingActionButton;
+import info.floatactionbutton.fab.sample.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,8 +35,8 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mListView = (ListView) view.findViewById(R.id.list);
-        mFab = (FloatingActionButton) view.findViewById(R.id.fab);
+        mListView = view.findViewById(R.id.list);
+        mFab = view.findViewById(R.id.fab);
     }
 
     @Override

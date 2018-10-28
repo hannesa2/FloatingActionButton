@@ -1,4 +1,4 @@
-package com.github.clans.fab.sample;
+package info.floatactionbutton.fab.sample;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,8 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.github.clans.fab.FloatingActionButton;
-import com.github.fab.sample.R;
+import info.floatactionbutton.fab.FloatingActionButton;
 
 import java.util.LinkedList;
 import java.util.Locale;
@@ -40,10 +39,10 @@ public class ProgressFragment extends Fragment {
             mProgressTypes.offer(type);
         }
 
-        final FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
+        final FloatingActionButton fab = view.findViewById(R.id.fab);
         fab.setMax(mMaxProgress);
 
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view);
+        RecyclerView recyclerView = view.findViewById(R.id.my_recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(new LanguageAdapter(availableLocales));

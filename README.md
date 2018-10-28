@@ -38,7 +38,7 @@ dependencies {
     compile 'com.github.clans:fab:1.6.4'
 }
 ```
-Add the `com.github.clans.fab.FloatingActionButton` to your layout XML file.
+Add the `info.floatactionbutton.fab.FloatingActionButton` to your layout XML file.
 ```XML
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
@@ -50,7 +50,7 @@ Add the `com.github.clans.fab.FloatingActionButton` to your layout XML file.
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.github.clans.fab.FloatingActionButton
+    <info.floatactionbutton.fab.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,7 +69,7 @@ You can set an icon for the **FloatingActionButton** using `android:src` xml att
 ### Floating action button
 Here are all the **FloatingActionButton**'s xml attributes with their **default values** which means that you don't have to set all of them:
 ```XML
-<com.github.clans.fab.FloatingActionButton
+<info.floatactionbutton.fab.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,7 +101,7 @@ All of these **FloatingActionButton**'s attributes has their corresponding gette
 ### Floating action menu
 Here are all the **FloatingActionMenu**'s xml attributes with their **default values** which means that you don't have to set all of them:
 ```XML
-<com.github.clans.fab.FloatingActionMenu
+<info.floatactionbutton.fab.FloatingActionMenu
         android:id="@+id/menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -148,7 +148,7 @@ Here are all the **FloatingActionMenu**'s xml attributes with their **default va
         fab:menu_fab_show_animation="@anim/my_show_animation"
         fab:menu_fab_hide_animation="@anim/my_hide_animation">
 
-        <com.github.clans.fab.FloatingActionButton
+        <info.floatactionbutton.fab.FloatingActionButton
             android:id="@+id/menu_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -156,7 +156,7 @@ Here are all the **FloatingActionMenu**'s xml attributes with their **default va
             fab:fab_size="mini"
             fab:fab_label="Menu item 1" />
 
-    </com.github.clans.fab.FloatingActionMenu>
+    </info.floatactionbutton.fab.FloatingActionMenu>
 ```
 
 If you're using custom style for labels - other labels attributes will be ignored.

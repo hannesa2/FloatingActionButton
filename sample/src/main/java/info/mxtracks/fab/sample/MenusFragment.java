@@ -1,4 +1,4 @@
-package com.github.clans.fab.sample;
+package info.floatactionbutton.fab.sample;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -17,9 +17,9 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Toast;
 
-import com.github.clans.fab.FloatingActionButton;
-import com.github.clans.fab.FloatingActionMenu;
-import com.github.fab.sample.R;
+import info.floatactionbutton.fab.FloatingActionButton;
+import info.floatactionbutton.fab.FloatingActionMenu;
+import info.floatactionbutton.fab.sample.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,16 +52,16 @@ public class MenusFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        menuRed = (FloatingActionMenu) view.findViewById(R.id.menu_red);
-        menuYellow = (FloatingActionMenu) view.findViewById(R.id.menu_yellow);
-        menuGreen = (FloatingActionMenu) view.findViewById(R.id.menu_green);
-        menuBlue = (FloatingActionMenu) view.findViewById(R.id.menu_blue);
-        menuDown = (FloatingActionMenu) view.findViewById(R.id.menu_down);
-        menuLabelsRight = (FloatingActionMenu) view.findViewById(R.id.menu_labels_right);
+        menuRed = view.findViewById(R.id.menu_red);
+        menuYellow = view.findViewById(R.id.menu_yellow);
+        menuGreen = view.findViewById(R.id.menu_green);
+        menuBlue = view.findViewById(R.id.menu_blue);
+        menuDown = view.findViewById(R.id.menu_down);
+        menuLabelsRight = view.findViewById(R.id.menu_labels_right);
 
-        fab1 = (FloatingActionButton) view.findViewById(R.id.fab1);
-        fab2 = (FloatingActionButton) view.findViewById(R.id.fab2);
-        fab3 = (FloatingActionButton) view.findViewById(R.id.fab3);
+        fab1 = view.findViewById(R.id.fab1);
+        fab2 = view.findViewById(R.id.fab2);
+        fab3 = view.findViewById(R.id.fab3);
 
         final FloatingActionButton programFab1 = new FloatingActionButton(getActivity());
         programFab1.setButtonSize(FloatingActionButton.SIZE_MINI);
@@ -95,7 +95,7 @@ public class MenusFragment extends Fragment {
         menuBlue.hideMenuButton(false);
         menuLabelsRight.hideMenuButton(false);
 
-        fabEdit = (FloatingActionButton) view.findViewById(R.id.fab_edit);
+        fabEdit = view.findViewById(R.id.fab_edit);
         fabEdit.setShowAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.scale_up));
         fabEdit.setHideAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.scale_down));
     }

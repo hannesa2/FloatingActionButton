@@ -1,4 +1,4 @@
-package com.github.clans.fab;
+package info.floatactionbutton.fab;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -14,7 +14,6 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
-import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +23,8 @@ import android.view.animation.AnticipateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
+
+import info.floatactionbutton.fab.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -985,7 +986,7 @@ public class FloatingActionMenu extends ViewGroup {
 
     public void removeAllMenuButtons() {
         close(true);
-        
+
         List<FloatingActionButton> viewsToRemove = new ArrayList<>();
         for (int i = 0; i < getChildCount(); i++) {
             View v = getChildAt(i);
