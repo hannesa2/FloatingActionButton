@@ -18,11 +18,11 @@ static def getVersion() {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode getGitCommitCount()
         versionName getVersion() + "." + versionCode + "." + getLatestGitHash()
         buildConfigField "String", commitSHA1, "\"" + getLatestGitHash() + "\""
