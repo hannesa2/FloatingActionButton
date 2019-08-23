@@ -1,7 +1,10 @@
 package com.github.clans.fab.sample;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -33,13 +36,14 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mListView = (ListView) view.findViewById(R.id.list);
-        mFab = (FloatingActionButton) view.findViewById(R.id.fab);
+        mListView = view.findViewById(R.id.list);
+        mFab = view.findViewById(R.id.fab);
     }
 
     @Override
+    @SuppressLint("WrongConstant")
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
@@ -49,8 +53,7 @@ public class HomeFragment extends Fragment {
             locales.add(locale.getDisplayName());
         }
 
-        mListView.setAdapter(new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1,
-                android.R.id.text1, locales));
+        mListView.setAdapter(new ArrayAdapter<>(requireActivity(), android.R.layout.simple_list_item_1,                android.R.id.text1, locales));
 
         mFab.hide(false);
         new Handler().postDelayed(new Runnable() {
@@ -81,7 +84,7 @@ public class HomeFragment extends Fragment {
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(mFab, "Replace with your own action", Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(mFab, "Replace with your own action", Snackbar.LENGTH_LONG).show();
             }
         });
     }
