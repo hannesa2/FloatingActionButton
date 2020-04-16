@@ -1,4 +1,4 @@
-package com.github.clans.fab.sample;
+package info.appdev.fab;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -19,7 +19,6 @@ import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
-import com.github.fab.sample.R;
 
 import java.util.ArrayList;
 import java.util.List;

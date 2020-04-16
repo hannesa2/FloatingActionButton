@@ -1,4 +1,4 @@
-package com.github.clans.fab.sample;
+package info.appdev.fab;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -16,7 +16,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.github.clans.fab.FloatingActionButton;
-import com.github.fab.sample.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;

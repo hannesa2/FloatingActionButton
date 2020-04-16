@@ -1,4 +1,4 @@
-package com.github.clans.fab.sample;
+package info.appdev.fab;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.github.clans.fab.FloatingActionButton;
-import com.github.fab.sample.R;
 
 import java.util.LinkedList;
 import java.util.Locale;
