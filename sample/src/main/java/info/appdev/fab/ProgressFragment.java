@@ -2,6 +2,8 @@ package info.appdev.fab;
 
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -30,7 +32,7 @@ public class ProgressFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         Locale[] availableLocales = Locale.getAvailableLocales();
@@ -39,10 +41,10 @@ public class ProgressFragment extends Fragment {
             mProgressTypes.offer(type);
         }
 
-        final FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
+        final FloatingActionButton fab = view.findViewById(R.id.fab);
         fab.setMax(mMaxProgress);
 
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view);
+        RecyclerView recyclerView = view.findViewById(R.id.my_recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(new LanguageAdapter(availableLocales));
@@ -83,7 +85,7 @@ public class ProgressFragment extends Fragment {
 
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (Math.abs(dy) > mScrollOffset) {
                     if (dy > 0) {
@@ -125,6 +127,7 @@ public class ProgressFragment extends Fragment {
             this.mLocales = mLocales;
         }
 
+        @NonNull
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             TextView tv = (TextView) LayoutInflater.from(parent.getContext())
@@ -146,9 +149,9 @@ public class ProgressFragment extends Fragment {
 
     private static class ViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView mTextView;
+        TextView mTextView;
 
-        public ViewHolder(TextView v) {
+        ViewHolder(TextView v) {
             super(v);
             mTextView = v;
         }
