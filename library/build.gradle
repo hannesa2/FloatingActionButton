@@ -42,9 +42,7 @@ android {
 
 dependencies {
     implementation "androidx.appcompat:appcompat:1.1.0"
-    implementation("com.google.android.material:material:1.0.0") {
+    implementation("com.google.android.material:material:1.1.0") {
         exclude group: 'com.google.guava', module: 'guava'
     }
-    // must add guava as top level dependency to force material to use latest version
-    //implementation 'com.google.guava:guava:27.0.1-android'
 }
