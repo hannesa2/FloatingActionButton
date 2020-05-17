@@ -170,7 +170,6 @@ public class Label extends AppCompatTextView {
         mShowShadow = fab.hasShadow();
     }
 
-    @SuppressWarnings("deprecation")
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void setBackgroundCompat(Drawable drawable) {
         if (Util.hasJellyBean()) {
@@ -292,9 +291,6 @@ public class Label extends AppCompatTextView {
         int action = event.getAction();
         switch (action) {
             case MotionEvent.ACTION_UP:
-                onActionUp();
-                mFab.onActionUp();
-                break;
 
             case MotionEvent.ACTION_CANCEL:
                 onActionUp();

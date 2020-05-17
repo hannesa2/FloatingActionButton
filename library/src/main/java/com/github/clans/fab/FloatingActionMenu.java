@@ -29,6 +29,7 @@ import java.util.List;
 
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
+@SuppressWarnings("ALL")
 @CoordinatorLayout.DefaultBehavior(FloatingActionButton.Behavior.class)
 public class FloatingActionMenu extends ViewGroup {
 

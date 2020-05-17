@@ -43,6 +43,7 @@ import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.ViewCompat;
 
+@SuppressWarnings("ALL")
 @CoordinatorLayout.DefaultBehavior(FloatingActionButton.Behavior.class)
 public class FloatingActionButton extends AppCompatImageButton {
 
@@ -428,7 +429,6 @@ public class FloatingActionButton extends AppCompatImageButton {
         return shapeDrawable;
     }
 
-    @SuppressWarnings("deprecation")
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     private void setBackgroundCompat(Drawable drawable) {
         if (Util.hasJellyBean()) {
@@ -554,16 +554,9 @@ public class FloatingActionButton extends AppCompatImageButton {
             int action = event.getAction();
             switch (action) {
                 case MotionEvent.ACTION_UP:
-                    if (label != null) {
-                        label.onActionUp();
-                    }
-                    onActionUp();
-                    break;
 
                 case MotionEvent.ACTION_CANCEL:
-                    if (label != null) {
-                        label.onActionUp();
-                    }
+                    label.onActionUp();
                     onActionUp();
                     break;
             }
@@ -645,9 +638,6 @@ public class FloatingActionButton extends AppCompatImageButton {
 
         private int circleInsetHorizontal;
         private int circleInsetVertical;
-
-        private CircleDrawable() {
-        }
 
         private CircleDrawable(Shape s) {
             super(s);
@@ -1170,7 +1160,6 @@ public class FloatingActionButton extends AppCompatImageButton {
         mProgressIndeterminate = indeterminate;
         mLastTimeAnimated = SystemClock.uptimeMillis();
         setupProgressBounds();
-//        saveButtonOriginalPosition();
         updateBackground();
     }
 
