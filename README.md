@@ -163,7 +163,7 @@ I used [android-floating-action-button](https://github.com/futuresimple/android-
 
 # License
 ```
-Copyright 2015 Dmytro Tarianyk
+Copyright 2020 hannesa2
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
