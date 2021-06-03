@@ -27,7 +27,7 @@ Yet another implementation of [Floating Action Button](http://www.google.com/des
 Add dependency to your `build.gradle` Please see details here a https://jitpack.io/#hannesa2/FloatingActionButton 
 ```
 dependencies {
-    implementation 'com.github.hannesa2:FloatingActionButton:2.3.2'
+    implementation 'com.github.hannesa2:FloatingActionButton:$latest_version'
 }
 ```
 Add the `com.github.clans.fab.FloatingActionButton` to your layout XML file.
@@ -163,7 +163,7 @@ I used [android-floating-action-button](https://github.com/futuresimple/android-
 
 # License
 ```
-Copyright 2020 hannesa2
+Copyright 2021 hannesa2
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
