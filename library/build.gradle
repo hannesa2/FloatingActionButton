@@ -1,4 +1,6 @@
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+}
 
 def commitSHA1 = 'COMMIT_SHA1'
 
