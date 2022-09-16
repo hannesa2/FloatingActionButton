@@ -26,21 +26,18 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 33
-        versionCode getGitCommitCount()
-        versionName getVersion() + "." + versionCode + "." + getLatestGitHash()
         buildConfigField "String", commitSHA1, "\"" + getLatestGitHash() + "\""
     }
     buildTypes {
         release {
             minifyEnabled false
-            debuggable false
         }
 
         debug {
             minifyEnabled false
-            debuggable true
         }
     }
+    namespace 'com.github.clans.fab'
 }
 
 dependencies {

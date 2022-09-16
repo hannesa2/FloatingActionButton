@@ -25,6 +25,7 @@ android {
             proguardFiles 'proguard-rules.pro'
         }
     }
+    namespace 'info.appdev.fab'
 }
 
 dependencies {
