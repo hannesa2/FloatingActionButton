@@ -3,15 +3,21 @@ plugins {
 }
 
 android {
-    compileSdkVersion 33
-
     defaultConfig {
         applicationId "info.appdev.fab"
         minSdkVersion 14
+        compileSdk 33
         targetSdkVersion 33
         versionCode 1
         versionName "1"
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+//    kotlinOptions {
+//        jvmTarget = '17'
+//    }
     buildTypes {
         release {
             minifyEnabled false
