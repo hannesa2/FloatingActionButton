@@ -3,11 +3,10 @@ plugins {
 }
 
 android {
-    compileSdkVersion 33
-
     defaultConfig {
         applicationId "info.appdev.fab"
         minSdkVersion 14
+        compileSdk 33
         targetSdkVersion 33
         versionCode 1
         versionName "1"
