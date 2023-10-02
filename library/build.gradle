@@ -23,8 +23,8 @@ static def getVersion() {
 android {
     defaultConfig {
         minSdkVersion 14
-        compileSdk 33
-        targetSdkVersion 33
+        compileSdk 34
+        targetSdkVersion 34
         buildConfigField "String", commitSHA1, "\"" + getLatestGitHash() + "\""
     }
     compileOptions {
