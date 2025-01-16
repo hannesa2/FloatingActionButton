@@ -6,8 +6,8 @@ android {
     defaultConfig {
         applicationId "info.appdev.fab"
         minSdkVersion 19
-        compileSdk 34
-        targetSdkVersion 34
+        compileSdk 35
+        targetSdkVersion 35
         versionCode 1
         versionName "1"
     }
