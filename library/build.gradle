@@ -13,8 +13,8 @@ static def getLatestGitHash() {
 android {
     defaultConfig {
         minSdkVersion 19
-        compileSdk 34
-        targetSdkVersion 34
+        compileSdk 35
+        targetSdkVersion 35
         buildConfigField "String", commitSHA1, "\"" + getLatestGitHash() + "\""
     }
     compileOptions {
