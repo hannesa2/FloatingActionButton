@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace 'info.appdev.fab'
     defaultConfig {
         applicationId "info.appdev.fab"
         minSdkVersion 21
@@ -21,7 +22,6 @@ android {
             proguardFiles 'proguard-rules.pro'
         }
     }
-    namespace 'info.appdev.fab'
 }
 
 dependencies {
