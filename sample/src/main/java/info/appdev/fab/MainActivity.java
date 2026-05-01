@@ -48,19 +48,15 @@ public class MainActivity extends AppCompatActivity {
 
             Fragment fragment = null;
             final FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            switch (item.getItemId()) {
-                case R.id.home:
-                    fragment = new HomeFragment();
-                    break;
-                case R.id.menus:
-                    fragment = new MenusFragment();
-                    break;
-                case R.id.progress:
-                    fragment = new ProgressFragment();
-                    break;
-                case R.id.snackbar_fab:
-                    fragment = new SnackbarFragment();
-                    break;
+            int id = item.getItemId();
+            if (id == R.id.home) {
+                fragment = new HomeFragment();
+            } else if (id == R.id.menus) {
+                fragment = new MenusFragment();
+            } else if (id == R.id.progress) {
+                fragment = new ProgressFragment();
+            } else if (id == R.id.snackbar_fab) {
+                fragment = new SnackbarFragment();
             }
 
             if (fragment != null) {
