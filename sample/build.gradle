@@ -6,7 +6,7 @@ android {
     namespace "info.appdev.fab"
     defaultConfig {
         applicationId "info.appdev.fab"
-        minSdkVersion 21
+        minSdkVersion 23
         compileSdk 37
         versionCode 1
         versionName "1"

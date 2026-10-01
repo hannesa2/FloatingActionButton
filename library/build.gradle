@@ -11,7 +11,7 @@ static def getLatestGitHash() {
 android {
     namespace "com.github.clans.fab"
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 23
         compileSdk 37
     }
     compileOptions {
