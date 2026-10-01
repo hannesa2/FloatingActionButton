@@ -16,7 +16,7 @@ jobs:
       - name: set up JDK 17
         uses: actions/setup-java@v5
         with:
-          distribution: 'adopt'
+          distribution: 'temurin'
           java-version: 17
       - uses: gradle/actions/wrapper-validation@v6.4.0
       - name: Build with Gradle
