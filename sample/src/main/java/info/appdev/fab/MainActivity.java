@@ -2,6 +2,7 @@ package info.appdev.fab;
 
 import android.os.Bundle;
 import com.google.android.material.navigation.NavigationView;
+import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.core.view.GravityCompat;
@@ -39,6 +40,19 @@ public class MainActivity extends AppCompatActivity {
         }
 
         navigationView.setCheckedItem(R.id.home);
+
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (mDrawerLayout != null && mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+                    mDrawerLayout.closeDrawer(GravityCompat.START);
+                } else {
+                    setEnabled(false);
+                    getOnBackPressedDispatcher().onBackPressed();
+                    setEnabled(true);
+                }
+            }
+        });
     }
 
     NavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener = new NavigationView.OnNavigationItemSelectedListener() {
@@ -66,12 +80,4 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    @Override
-    public void onBackPressed() {
-        if (mDrawerLayout != null && mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
-            mDrawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
 }
