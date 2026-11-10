@@ -1,0 +1,31 @@
+plugins {
+    id("com.android.application")
+}
+
+android {
+    namespace = "info.appdev.fab"
+    defaultConfig {
+        applicationId = "info.appdev.fab"
+        minSdk = 23
+        compileSdk = 37
+        versionCode = 1
+        versionName = "1"
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = false
+            proguardFiles("proguard-rules.pro")
+        }
+    }
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.8.0")
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
+    implementation("com.google.android.material:material:1.14.0")
+    implementation(project(":library"))
+}
