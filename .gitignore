@@ -1,6 +1,7 @@
 # Built application files
 *.apk
 *.ap_
+*.hprof
 
 # Files for the Dalvik VM
 *.dex
