@@ -1,3 +1,6 @@
+plugins {
+    kotlin("jvm")
+}
 buildscript {
     repositories {
         google()
@@ -13,4 +16,13 @@ allprojects {
         google()
         mavenCentral()
     }
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    testImplementation(kotlin("test"))
+}
+kotlin {
+    jvmToolchain(8)
 }
